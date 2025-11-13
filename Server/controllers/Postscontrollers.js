@@ -21,7 +21,7 @@ export const getAllPosts = async (req, res) => {
   const hasMore = page * limit < totalPosts;
   const nextPage = hasMore ? page + 1 : null;
 
-  console.log(posts);
+  // console.log(posts);
 
   res.status(200).json({ posts, hasMore, nextPage });
 };
